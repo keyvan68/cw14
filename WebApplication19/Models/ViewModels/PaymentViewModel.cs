@@ -4,12 +4,25 @@ namespace WebApplication19.Models.ViewModels
 {
     public class PaymentViewModel
     {
-        [StringLength(16,ErrorMessage ="16 رقمی باشد", MinimumLength = 16)]
         public string CardNumber { get; set; }
+
+        [StringLength(4, ErrorMessage = "4 رقمی باشد", MinimumLength = 4)]
+        public string CardNumber1 { get; set; }
+
+        [StringLength(4, ErrorMessage = "4 رقمی باشد", MinimumLength = 4)]
+        public string CardNumber2 { get; set; }
+
+        [StringLength(4, ErrorMessage = "4 رقمی باشد", MinimumLength = 4)]
+        public string CardNumber3 { get; set; }
+
+        [StringLength(4, ErrorMessage = "4 رقمی باشد", MinimumLength = 4)]
+        public string CardNumber4 { get; set; }
+
+
         public int Price { get; set; }
-        [StringLength(5, ErrorMessage = "16 رقمی باشد", MinimumLength = 5)]
+        [StringLength(5, ErrorMessage = "5 رقمی باشد", MinimumLength = 5)]
         public string Captcha { get; set; }
-        
+
         //public string ConfirmCaptcha { get; set; }
     }
 }

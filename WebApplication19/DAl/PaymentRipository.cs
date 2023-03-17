@@ -9,7 +9,7 @@ namespace WebApplication19.DAl
         {
             var payment = new Payment
             {
-                CardNumber = paymentViewModel.CardNumber,
+                CardNumber = paymentViewModel.CardNumber1 + paymentViewModel.CardNumber2 + paymentViewModel.CardNumber3 + paymentViewModel.CardNumber4,
                 Price = paymentViewModel.Price
             };
             DataStorage.Payments.Add(payment);
